@@ -1,0 +1,50 @@
+body {
+  margin: none;
+}
+.main {
+  background-color: antiquewhite;
+  display: grid;
+  /* grid-template-columns: 25% 75%; */
+  grid-template-areas:
+    "heading heading"
+    "sidebar description";
+  margin: none;
+  border: 1px solid black;
+}
+.header {
+  position: relative;
+  margin: none;
+  border: 1px solid black;
+  grid-area: heading;
+}
+.main-heading {
+  background-color: beige;
+  width: 100%;
+
+  border: 1px solid black;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  width: 10rem;
+  position: relative;
+  border: 1px solid black;
+}
+
+.list {
+  list-style: none;
+  /* position: fixed; */
+  top: 6rem;
+}
+.list > li {
+  padding: 2px;
+}
+
+.description {
+  grid-area: description;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid black;
+}
